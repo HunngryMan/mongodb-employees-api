@@ -1,0 +1,50 @@
+###
+GET http://localhost:4000/api/employees
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name": "ryan Ray",
+    "position": "Sr dev",
+    "office": "Rome",
+    "salary": "22000"
+}
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Steven Spielberg",
+    "position": "Jnr Dev",
+    "office": "Helsinki",
+    "salary": "15000"
+}
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Mary Curie",
+    "position": "Snr Cybersec",
+    "office": "Frankfurt",
+    "salary": "28000"
+}
+
+###
+GET http://localhost:4000/api/employees/62e04258e2ff8e905eb20443
+
+###
+DELETE http://localhost:4000/api/employees/62e04258e2ff8e905eb20443
+
+
+###
+PUT http://localhost:4000/api/employees/62e04258e2ff8e905eb20443
+Content-Type: application/json
+
+{
+    "salary" : 18000
+}
